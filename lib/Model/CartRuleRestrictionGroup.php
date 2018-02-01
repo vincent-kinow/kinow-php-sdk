@@ -1,6 +1,6 @@
 <?php
 /**
- * Director1
+ * CartRuleRestrictionGroup
  *
  * PHP version 5
  *
@@ -44,7 +44,7 @@ namespace Swagger\Client\Model;
 use \ArrayAccess;
 
 /**
- * Director1 Class Doc Comment
+ * CartRuleRestrictionGroup Class Doc Comment
  *
  * @category    Class */
 /** 
@@ -53,21 +53,21 @@ use \ArrayAccess;
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class Director1 implements ArrayAccess
+class CartRuleRestrictionGroup implements ArrayAccess
 {
     /**
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'Director_1';
+    protected static $swaggerModelName = 'CartRuleRestrictionGroup';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'pagination' => '\Swagger\Client\Model\Pagination',
-        'data' => '\Swagger\Client\Model\Director[]'
+        'quantity' => 'int',
+        'items' => '\Swagger\Client\Model\CartRuleRestrictionGroupItem[]'
     );
 
     public static function swaggerTypes()
@@ -80,8 +80,8 @@ class Director1 implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = array(
-        'pagination' => 'pagination',
-        'data' => 'data'
+        'quantity' => 'quantity',
+        'items' => 'items'
     );
 
     public static function attributeMap()
@@ -94,8 +94,8 @@ class Director1 implements ArrayAccess
      * @var string[]
      */
     protected static $setters = array(
-        'pagination' => 'setPagination',
-        'data' => 'setData'
+        'quantity' => 'setQuantity',
+        'items' => 'setItems'
     );
 
     public static function setters()
@@ -108,8 +108,8 @@ class Director1 implements ArrayAccess
      * @var string[]
      */
     protected static $getters = array(
-        'pagination' => 'getPagination',
-        'data' => 'getData'
+        'quantity' => 'getQuantity',
+        'items' => 'getItems'
     );
 
     public static function getters()
@@ -133,8 +133,8 @@ class Director1 implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pagination'] = isset($data['pagination']) ? $data['pagination'] : null;
-        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
+        $this->container['quantity'] = isset($data['quantity']) ? $data['quantity'] : null;
+        $this->container['items'] = isset($data['items']) ? $data['items'] : null;
     }
 
     /**
@@ -161,43 +161,43 @@ class Director1 implements ArrayAccess
 
 
     /**
-     * Gets pagination
-     * @return \Swagger\Client\Model\Pagination
+     * Gets quantity
+     * @return int
      */
-    public function getPagination()
+    public function getQuantity()
     {
-        return $this->container['pagination'];
+        return $this->container['quantity'];
     }
 
     /**
-     * Sets pagination
-     * @param \Swagger\Client\Model\Pagination $pagination
+     * Sets quantity
+     * @param int $quantity Cart must contain at least product(s) \"X\" matching the following restrictions:
      * @return $this
      */
-    public function setPagination($pagination)
+    public function setQuantity($quantity)
     {
-        $this->container['pagination'] = $pagination;
+        $this->container['quantity'] = $quantity;
 
         return $this;
     }
 
     /**
-     * Gets data
-     * @return \Swagger\Client\Model\Director[]
+     * Gets items
+     * @return \Swagger\Client\Model\CartRuleRestrictionGroupItem[]
      */
-    public function getData()
+    public function getItems()
     {
-        return $this->container['data'];
+        return $this->container['items'];
     }
 
     /**
-     * Sets data
-     * @param \Swagger\Client\Model\Director[] $data
+     * Sets items
+     * @param \Swagger\Client\Model\CartRuleRestrictionGroupItem[] $items
      * @return $this
      */
-    public function setData($data)
+    public function setItems($items)
     {
-        $this->container['data'] = $data;
+        $this->container['items'] = $items;
 
         return $this;
     }

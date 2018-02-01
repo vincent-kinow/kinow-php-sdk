@@ -1,6 +1,6 @@
 <?php
 /**
- * Director1
+ * CartRuleRestrictionGroupItem
  *
  * PHP version 5
  *
@@ -44,7 +44,7 @@ namespace Swagger\Client\Model;
 use \ArrayAccess;
 
 /**
- * Director1 Class Doc Comment
+ * CartRuleRestrictionGroupItem Class Doc Comment
  *
  * @category    Class */
 /** 
@@ -53,21 +53,21 @@ use \ArrayAccess;
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class Director1 implements ArrayAccess
+class CartRuleRestrictionGroupItem implements ArrayAccess
 {
     /**
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'Director_1';
+    protected static $swaggerModelName = 'CartRuleRestrictionGroupItem';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'pagination' => '\Swagger\Client\Model\Pagination',
-        'data' => '\Swagger\Client\Model\Director[]'
+        'type' => 'string',
+        'id_item' => 'int'
     );
 
     public static function swaggerTypes()
@@ -80,8 +80,8 @@ class Director1 implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = array(
-        'pagination' => 'pagination',
-        'data' => 'data'
+        'type' => 'type',
+        'id_item' => 'id_item'
     );
 
     public static function attributeMap()
@@ -94,8 +94,8 @@ class Director1 implements ArrayAccess
      * @var string[]
      */
     protected static $setters = array(
-        'pagination' => 'setPagination',
-        'data' => 'setData'
+        'type' => 'setType',
+        'id_item' => 'setIdItem'
     );
 
     public static function setters()
@@ -108,8 +108,8 @@ class Director1 implements ArrayAccess
      * @var string[]
      */
     protected static $getters = array(
-        'pagination' => 'getPagination',
-        'data' => 'getData'
+        'type' => 'getType',
+        'id_item' => 'getIdItem'
     );
 
     public static function getters()
@@ -133,8 +133,8 @@ class Director1 implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['pagination'] = isset($data['pagination']) ? $data['pagination'] : null;
-        $this->container['data'] = isset($data['data']) ? $data['data'] : null;
+        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['id_item'] = isset($data['id_item']) ? $data['id_item'] : null;
     }
 
     /**
@@ -161,43 +161,43 @@ class Director1 implements ArrayAccess
 
 
     /**
-     * Gets pagination
-     * @return \Swagger\Client\Model\Pagination
+     * Gets type
+     * @return string
      */
-    public function getPagination()
+    public function getType()
     {
-        return $this->container['pagination'];
+        return $this->container['type'];
     }
 
     /**
-     * Sets pagination
-     * @param \Swagger\Client\Model\Pagination $pagination
+     * Sets type
+     * @param string $type Can be: product, subscription, category, actor or director
      * @return $this
      */
-    public function setPagination($pagination)
+    public function setType($type)
     {
-        $this->container['pagination'] = $pagination;
+        $this->container['type'] = $type;
 
         return $this;
     }
 
     /**
-     * Gets data
-     * @return \Swagger\Client\Model\Director[]
+     * Gets id_item
+     * @return int
      */
-    public function getData()
+    public function getIdItem()
     {
-        return $this->container['data'];
+        return $this->container['id_item'];
     }
 
     /**
-     * Sets data
-     * @param \Swagger\Client\Model\Director[] $data
+     * Sets id_item
+     * @param int $id_item Id of the item to restrict
      * @return $this
      */
-    public function setData($data)
+    public function setIdItem($id_item)
     {
-        $this->container['data'] = $data;
+        $this->container['id_item'] = $id_item;
 
         return $this;
     }

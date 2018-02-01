@@ -1,6 +1,6 @@
 <?php
 /**
- * ProductAccessTest
+ * CartRuleRestrictionGroupTest
  *
  * PHP version 5
  *
@@ -42,17 +42,17 @@
 namespace Swagger\Client;
 
 /**
- * ProductAccessTest Class Doc Comment
+ * CartRuleRestrictionGroupTest Class Doc Comment
  *
  * @category    Class */
-// * @description ProductAccess
+// * @description CartRuleRestrictionGroup
 /**
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ProductAccessTest extends \PHPUnit_Framework_TestCase
+class CartRuleRestrictionGroupTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -88,105 +88,25 @@ class ProductAccessTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ProductAccess"
+     * Test "CartRuleRestrictionGroup"
      */
-    public function testProductAccess()
+    public function testCartRuleRestrictionGroup()
     {
 
     }
 
     /**
-     * Test attribute "id"
+     * Test attribute "quantity"
      */
-    public function testPropertyId()
+    public function testPropertyQuantity()
     {
 
     }
 
     /**
-     * Test attribute "id_customer"
+     * Test attribute "items"
      */
-    public function testPropertyIdCustomer()
-    {
-
-    }
-
-    /**
-     * Test attribute "id_product"
-     */
-    public function testPropertyIdProduct()
-    {
-
-    }
-
-    /**
-     * Test attribute "id_product_attribute"
-     */
-    public function testPropertyIdProductAttribute()
-    {
-
-    }
-
-    /**
-     * Test attribute "type"
-     */
-    public function testPropertyType()
-    {
-
-    }
-
-    /**
-     * Test attribute "date_add"
-     */
-    public function testPropertyDateAdd()
-    {
-
-    }
-
-    /**
-     * Test attribute "date_exp"
-     */
-    public function testPropertyDateExp()
-    {
-
-    }
-
-    /**
-     * Test attribute "cancel"
-     */
-    public function testPropertyCancel()
-    {
-
-    }
-
-    /**
-     * Test attribute "recurring"
-     */
-    public function testPropertyRecurring()
-    {
-
-    }
-
-    /**
-     * Test attribute "active"
-     */
-    public function testPropertyActive()
-    {
-
-    }
-
-    /**
-     * Test attribute "message"
-     */
-    public function testPropertyMessage()
-    {
-
-    }
-
-    /**
-     * Test attribute "id_order"
-     */
-    public function testPropertyIdOrder()
+    public function testPropertyItems()
     {
 
     }
