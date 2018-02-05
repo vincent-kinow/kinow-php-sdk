@@ -1,5 +1,5 @@
 {
-    "name": "GIT_USER_ID/GIT_REPO_ID",
+    "name": "kinow-io/kameo-php-sdk",
     "description": "",
     "keywords": [
         "swagger",
@@ -7,12 +7,12 @@
         "sdk",
         "api"
     ],
-    "homepage": "http://swagger.io",
-    "license": "Apache v2",
+    "homepage": "https://www.kaemo.com",
+    "license": "proprietary",
     "authors": [
         {
-            "name": "Swagger and contributors",
-            "homepage": "https://github.com/swagger-api/swagger-codegen"
+            "name": "Kaemo",
+            "homepage": "https://github.com/kinow-io"
         }
     ],
     "require": {
@@ -24,12 +24,13 @@
     "require-dev": {
         "phpunit/phpunit": "~4.8",
         "satooshi/php-coveralls": "~1.0",
-        "squizlabs/php_codesniffer": "~2.6"
+        "squizlabs/php_codesniffer": "~2.6",
+        "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "Swagger\\Client\\" : "lib/" }
+        "psr-4": { "Kaemo\\Client\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "Swagger\\Client\\" : "test/" }
+        "psr-4": { "Kaemo\\Client\\" : "test/" }
     }
 }
