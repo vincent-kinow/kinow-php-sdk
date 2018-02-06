@@ -1,6 +1,6 @@
 # FacebookApi
 
-All URIs are relative to *http://1.0.63/api*
+All URIs are relative to *https://api.kaemo.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
