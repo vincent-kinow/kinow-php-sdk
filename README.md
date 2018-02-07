@@ -72,7 +72,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://api.dev.km/api*
+All URIs are relative to *https://api.kaemo.com/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
