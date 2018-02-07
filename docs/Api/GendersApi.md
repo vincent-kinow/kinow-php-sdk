@@ -1,6 +1,6 @@
 # GendersApi
 
-All URIs are relative to *https://api.kaemo.com/api*
+All URIs are relative to *http://api.dev.km/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
