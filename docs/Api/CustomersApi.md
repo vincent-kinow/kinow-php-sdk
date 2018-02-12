@@ -331,7 +331,7 @@ No authorization required
  - **Accept**: Not defined
 
 ## **getCustomerAccessesSubscriptions**
-> \Kaemo\Client\Model\SubscriptionAccesses getCustomerAccessesSubscriptions($customer_id, $page, $per_page, $filters)
+> \Kaemo\Client\Model\SubscriptionAccesses getCustomerAccessesSubscriptions($customer_id, $page, $per_page)
 
 
 
@@ -346,10 +346,9 @@ $api_instance = new Kaemo\Client\Api\CustomersApi();
 $customer_id = 789; // int | ID of the customer to fetch
 $page = 789; // int | 
 $per_page = 789; // int | 
-$filters = "filters_example"; // string | ``` filters[type][value]=string&filters[type][operator]=strict&filters[cancel][value]=string&filters[cancel][operator]=contains _______________  { \"type\": { \"value\": \"string\", \"operator\": \"strict\" }, \"cancel\": { \"value\": \"string\", \"operator\": \"contains\" } } ```Operator can be strict, contains, gt or lt.
 
 try {
-    $result = $api_instance->getCustomerAccessesSubscriptions($customer_id, $page, $per_page, $filters);
+    $result = $api_instance->getCustomerAccessesSubscriptions($customer_id, $page, $per_page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CustomersApi->getCustomerAccessesSubscriptions: ', $e->getMessage(), PHP_EOL;
@@ -364,7 +363,6 @@ Name | Type | Description  | Notes
  **customer_id** | **int**| ID of the customer to fetch |
  **page** | **int**|  | [optional]
  **per_page** | **int**|  | [optional]
- **filters** | **string**| &#x60;&#x60;&#x60; filters[type][value]&#x3D;string&amp;filters[type][operator]&#x3D;strict&amp;filters[cancel][value]&#x3D;string&amp;filters[cancel][operator]&#x3D;contains _______________  { \&quot;type\&quot;: { \&quot;value\&quot;: \&quot;string\&quot;, \&quot;operator\&quot;: \&quot;strict\&quot; }, \&quot;cancel\&quot;: { \&quot;value\&quot;: \&quot;string\&quot;, \&quot;operator\&quot;: \&quot;contains\&quot; } } &#x60;&#x60;&#x60;Operator can be strict, contains, gt or lt. | [optional]
 
 ### Return type
 

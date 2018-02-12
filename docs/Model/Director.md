@@ -10,6 +10,5 @@ Name | Type | Description | Notes
 **active** | **string** |  | [optional] 
 **link_rewrite** | [**\Kaemo\Client\Model\I18nField[]**](#I18nField) |  | [optional] 
 **description** | [**\Kaemo\Client\Model\I18nField[]**](#I18nField) |  | [optional] 
-**image** | **string** |  | [optional] 
 
 
