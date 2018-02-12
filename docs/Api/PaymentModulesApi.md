@@ -1,6 +1,6 @@
 # PaymentModulesApi
 
-All URIs are relative to *https://api.kaemo.com/api*
+All URIs are relative to *http://version-api.kinow.fr/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
