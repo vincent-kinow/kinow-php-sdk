@@ -72,7 +72,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://version-api.kinow.fr/api*
+All URIs are relative to *http://version.api.dev/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

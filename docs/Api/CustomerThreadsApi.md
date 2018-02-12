@@ -1,6 +1,6 @@
 # CustomerThreadsApi
 
-All URIs are relative to *http://version-api.kinow.fr/api*
+All URIs are relative to *http://version.api.dev/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
