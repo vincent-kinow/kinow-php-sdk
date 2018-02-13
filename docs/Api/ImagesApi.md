@@ -1,6 +1,6 @@
 # ImagesApi
 
-All URIs are relative to *http://version.api.dev/api*
+All URIs are relative to *http://api.dev.km/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
