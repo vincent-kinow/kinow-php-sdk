@@ -1,6 +1,6 @@
 # ImagesApi
 
-All URIs are relative to *http://api.dev.km/api*
+All URIs are relative to *https://api.kaemo.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
