@@ -252,7 +252,7 @@ No authorization required
  - **Accept**: Not defined
 
 ## **setVideoGeolocation**
-> setVideoGeolocation($video_id, $enabled, $behavior_detected_countries, $behavior_non_detected_countries, $countries, $page, $per_page)
+> setVideoGeolocation($video_id, $enabled, $behavior_detected_countries, $behavior_non_detected_countries, $countries)
 
 
 
@@ -269,11 +269,9 @@ $enabled = 56; // int | Enabled
 $behavior_detected_countries = "behavior_detected_countries_example"; // string | Behavior for detected countries
 $behavior_non_detected_countries = "behavior_non_detected_countries_example"; // string | Behavior for non-detected countries
 $countries = "countries_example"; // string | IDs of the non-detected countries separated by comma
-$page = 789; // int | 
-$per_page = 789; // int | 
 
 try {
-    $api_instance->setVideoGeolocation($video_id, $enabled, $behavior_detected_countries, $behavior_non_detected_countries, $countries, $page, $per_page);
+    $api_instance->setVideoGeolocation($video_id, $enabled, $behavior_detected_countries, $behavior_non_detected_countries, $countries);
 } catch (Exception $e) {
     echo 'Exception when calling GeolocationsApi->setVideoGeolocation: ', $e->getMessage(), PHP_EOL;
 }
@@ -289,8 +287,6 @@ Name | Type | Description  | Notes
  **behavior_detected_countries** | **string**| Behavior for detected countries |
  **behavior_non_detected_countries** | **string**| Behavior for non-detected countries |
  **countries** | **string**| IDs of the non-detected countries separated by comma | [optional]
- **page** | **int**|  | [optional]
- **per_page** | **int**|  | [optional]
 
 ### Return type
 
